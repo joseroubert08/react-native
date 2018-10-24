@@ -12,7 +12,7 @@
     "babel-register": "^6.6.0",
     "babel-types": "^6.6.4",
     "bluebird": "^2.9.21",
-    "connect": "2.8.3",
+    "connect": "3.0.0",
     "deep-assign": "^2.0.0",
     "feed": "^0.3.0",
     "flow-parser": "^0.32.0",
