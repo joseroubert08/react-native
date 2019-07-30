@@ -108,7 +108,9 @@
     "test": "jest",
     "flow": "flow",
     "lint": "eslint Examples/ Libraries/",
-    "start": "/usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --"
+    "start": "/usr/bin/env bash -c './packager/packager.sh \"$@\" || true' --",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "react-native": "local-cli/wrong-react-native.js"
@@ -191,7 +193,8 @@
     "ws": "^1.1.0",
     "xcode": "^0.8.9",
     "xmldoc": "^0.4.0",
-    "yargs": "^6.4.0"
+    "yargs": "^6.4.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -209,5 +212,6 @@
     "react-test-renderer": "~15.4.0-rc.4",
     "shelljs": "0.6.0",
     "sinon": "^2.0.0-pre.2"
-  }
+  },
+  "snyk": true
 }
